@@ -35,7 +35,7 @@ export class UsersController {
   ) {
     return this.usersService.registration(createUserDto, res);
   }
-
+// console.log('dadad);
   @Post('find')
   findUser(@Body() finduserDto: FindeUserDto) {
     return this.usersService.findUser(finduserDto);

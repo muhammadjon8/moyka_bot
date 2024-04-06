@@ -17,6 +17,7 @@ export class BotUpdate {
   async onStart(@Ctx() ctx: Context) {
     // ctx.reply('Hello world ! nestjs');
     this.botService.start(ctx);
+    // this.botService.onEmail(ctx);
   }
 
   @On('contact')
